@@ -1,0 +1,62 @@
+{
+  "id": "a590c423-5ec8-48d5-bf52-b6684bc9307d",
+  "alias": "ListInfoWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "List Info",
+        "en-us": "List Info",
+        "fa-ir": "اطلاعات لیست"
+      },
+      "description": {
+        "default": "Description of the web part",
+        "en-us": "Description of the web part",
+        "fa-ir": "توضیحات وب پارت"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "ListInfo",
+        "listName": ""
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "list-info-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "list-info-web-part": {
+        "type": "path",
+        "path": "dist/list-info-web-part.js"
+      },
+      "ListInfoWebPartStrings": {
+        "defaultPath": "lib/webparts/listInfo/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "version": "1.4.1",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+      }
+    }
+  }
+}
